@@ -60,11 +60,9 @@ app.post("/auth/register", async (req, res) => {
       .json({ message: { id: response._id, username: response.username } });
   } catch (err) {
     if (err.code === 11000) {
-      return res
-        .status(409)
-        .json({
-          message: `user already exists with this username ${username}`,
-        });
+      return res.status(409).json({
+        message: `user already exists with this username ${username}`,
+      });
     }
     return res.status(500).send();
   }

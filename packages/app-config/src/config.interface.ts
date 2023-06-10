@@ -23,6 +23,11 @@ export interface ApiConfig {
   apiKey: string;
 }
 
+export interface AuthConfig {
+  secret: string;
+  expiry: string;
+}
+
 export interface ConfigData {
   env: string;
 
@@ -35,6 +40,8 @@ export interface ConfigData {
   logLevel: string;
 
   email: EmailConfig;
+
+  auth: AuthConfig;
 
   externalApi: ApiConfig;
 }

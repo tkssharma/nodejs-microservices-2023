@@ -10,6 +10,10 @@ export const DEFAULT_CONFIG: ConfigData = {
     username: "",
     password: "",
   },
+  auth: {
+    secret: "",
+    expiry: "",
+  },
   logLevel: "",
   email: {
     service_name: "",

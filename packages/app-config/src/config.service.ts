@@ -20,6 +20,10 @@ export class ConfigService {
       db: this.parseDBConfig(env, DEFAULT_CONFIG.db),
       swagger: this.parseSwaggerConfig(env, DEFAULT_CONFIG.swagger),
       logLevel: env.LOG_LEVEL!,
+      auth: {
+        secret: env.AUTH_SECRET || "",
+        expiry: env.AUTH_TOKEN_EXPIRY || "",
+      },
       email: {
         service_name: env.EMAIL_SERVICE_NAME || "",
         username: env.EMAIL_USERNAME || "",

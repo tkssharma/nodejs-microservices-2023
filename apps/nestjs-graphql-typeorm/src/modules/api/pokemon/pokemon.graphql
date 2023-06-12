@@ -5,7 +5,6 @@ type Pokemon{
     type: String!
     league: League!
 }
-
 type Query{
     pokemons: [Pokemon!]
     pokemon(id: ID): Pokemon!

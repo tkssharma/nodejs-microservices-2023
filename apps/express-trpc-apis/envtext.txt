@@ -1,0 +1,2 @@
+PORT=3000
+MONGODB_CONNECTION_STRING=mongodb+srv://username:password@usercluster.bwa3z.mongodb.net/dotodb?retryWrites=true&w=majority
